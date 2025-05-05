@@ -1,161 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jangkarbumi</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <style>
-            body {
-                margin: 0;
-                font-family: Arial, sans-serif;
-                background-color: #000;
-                color: #fff;
-            }
-            a {
-                color: #fff;
-                text-decoration: none;
-                transition: color 0.3s ease;
-            }
-            a:hover {
-                color: black;
-                background-color: white;
-            }
-            h1, h2, p {
-                margin: 0;
-            }
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jangkarbumi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jangkarbumi</h1>
+            <nav>
+                <a class="github" href="https://github.com/jangkarbumi" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="ig" href="https://www.instagram.com/wahyuuuuuaji" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </nav>
+        </header>
+        <hr>
 
-            
-            .social-media-container {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-                padding: 20px 0;
-            }
-            .social-media {
-                font-size: 2rem;
-            }
+        <main>
+            <div class="section-diri">
+                <section>
+                    <h2>Wahyu Aji Gumelar Tri Nugroho</h2>
+                    <p>Computer Science Student at Universitas Diponegoro</p>
+                    <img class="fotodiri" src="gambar/fotodiri.jpg">
+                </section>
 
-            
-            .perkenalan-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-                padding: 40px 20px;
-                gap: 20px;
-                border-bottom: 2px solid #444;
-            }
-            .data-diri {
-                flex: 1;
-            }
-            .deskripsi-container {
-                flex: 1;
-                text-align: right;
-                max-width: 500px;
-            }
-            .deskripsi {
-                font-size: 1.2rem;
-                line-height: 1.6;
-            }
-
-            
-            .content-2 {
-                padding: 40px 20px;
-                text-align: center;
-            }
-            .header-2 {
-                font-size: 2rem;
-                margin-bottom: 20px;
-            }
-            .coding-languages {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 30px;
-            }
-            .cpp {
-                width: 78px;
-            }
-
-            
-            .content-3 {
-                padding: 40px 20px;
-                text-align: center;
-            }
-            .header-3 {
-                font-size: 2rem;
-                margin-bottom: 20px;
-            }
-            .list {
-                text-align: left;
-                max-width: 400px;
-                margin: 0 auto;
-                font-size: 1.2rem;
-            }
-
-            
-            @media (max-width: 768px) {
-                .perkenalan-container {
-                    flex-direction: column;
-                    text-align: center;
-                }
-                .deskripsi-container {
-                    text-align: center;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        
-        <div class="social-media-container">
-            <a href="https://github.com/jangkarbumi" target="_blank" class="social-media">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.instagram.com/wahyuuuuuaji/" target="_blank" class="social-media">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://x.com/jangkarbumilysm" target="_blank" class="social-media">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </div>
-
-        
-        <div class="perkenalan-container">
-            <div class="data-diri">
-                <h1 class="nickname">JANGKARBUMI</h1>
-                <h2 class="nama">Wahyu Aji Gumelar Tri Nugroho</h2>
+                <article>
+                    <h2>Currently at:</h2>
+                    <a href="https://hmif.my.id" target="_blank">
+                        <img src="gambar/HMIFLogo.png" alt="HMIF Undip">
+                    </a>
+                    <p>As website staff since April 2025</p>
+                </article>
             </div>
-            <div class="deskripsi-container">
-                <p class="deskripsi">
-                    Hello! I'm Aji. I'm a first-year student at Universitas
-                    Diponegoro majoring in Computer Science.
-                </p>
-            </div>
-        </div>
 
-        
-        <div class="content-2">
-            <h2 class="header-2">I'm still learning some coding languages, such as:</h2>
-            <div class="coding-languages">
-                <i class="fab fa-python" style="font-size:78px;color:white"></i>
-                <i class="fab fa-html5" style="font-size:78px;color:white"></i>
-                <i class="fab fa-css3-alt" style="font-size:78px;color:white"></i>
-                <img class="cpp" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
-                <img class="cpp" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
-            </div>
-        </div>
+            <hr>
 
-        
-        <div class="content-3">
-            <h2 class="header-3">I'm also interested in:</h2>
-            <div class="list">
-                <ol>
-                    <li>Competitive Programming</li>
-                    <li>Web Development</li>
-                    <li>Machine Learning</li>
-                </ol>
+            <div class="section-coding">
+                <article>
+                    <h2>I'm still learning some coding languages, such as:</h2>
+                    <div class="lang">
+                        <figure><i class="fab fa-python"></i></figure>    
+                        <figure><i class="fab fa-html5"></i></figure>
+                        <figure><i class="fab fa-css3-alt"></i></figure>
+                        <figure><i class="fab fa-js-square"></i></figure>
+                        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"></figure>
+                        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"></figure>
+                    </div>
+                </article>
             </div>
-        </div>
-    </body>
+        </main>
+
+        <footer>
+            <p>Kontak: wahyuuajigtn13@gmail.com</p>
+            <p>&copy; Jangkarbumi 2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
