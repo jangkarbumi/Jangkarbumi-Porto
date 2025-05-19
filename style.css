@@ -35,18 +35,21 @@ a {
 h1 {
     color: #183b4e;
 }
-.nav {
+nav {
     font-size: 17px;
     font-weight: bold;
-    color: #183b4e;
-    cursor: pointer;
-    transition: opacity, color, background-color 0.3s ease;
-}
-.nav-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 10px;
 }
+
+.nav {
+    padding: 11px 20px 11px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: opacity, color, background-color 0.3s ease;
+}
+
 .nav:hover {
     background-color: #183b4e;
     color: #F3F3E0;
@@ -54,21 +57,7 @@ h1 {
 .nav:active {
     opacity: 0.5;
 }
-.nav.about {
-    padding: 11px 20px 11px 20px;
-    border: none;
-    border-radius: 10px;
-}
-.nav.hmif {
-    padding: 11px 20px 11px 20px;
-    border: none;
-    border-radius: 10px;
-}
-.nav.project {
-    padding: 11px 20px 11px 20px;
-    border: none;
-    border-radius: 10px;
-}
+
 .header {
     margin-top: 10px;
 }
