@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #183b4e;
+    font-family: "Share Tech";
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3e0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    position: sticky;
+}
+nav {
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.nav {
+    padding: 11px 20px 11px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: opacity, color, background-color 0.3s ease;
+}
+.nav:hover {
+    background-color: #183b4e;
+    color: #f3f3e0;
+}
+.nav:active {
+    opacity: 0.7;
+}
+hr {
+    margin-top: 10px;
+}
+
+img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 45px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+main p {
+    font-size: 20px;
+    margin-top: 4px;
+}
+
+.about-me, .komingfo {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 200px;
+    max-width: 1000px;
+    width: 100%;
+    margin-inline: auto;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+@media (max-width: 926px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .about-me, .komingfo {
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        gap: 4px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        padding: 6px 10px;
+    }
+
+    .isi {
+        display: flex;
+        flex-direction: column;
+    }
+}
