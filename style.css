@@ -40,7 +40,6 @@ h1 {
     font-weight: bold;
     color: #183b4e;
     cursor: pointer;
-    margin-bottom: 5px;
     transition: opacity, color, background-color 0.3s ease;
 }
 .nav-container {
