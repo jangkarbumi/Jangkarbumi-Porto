@@ -36,13 +36,12 @@ h1 {
     color: #183b4e;
 }
 .nav {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
-    background-color: #183b4e;
-    color: #F3F3E0;
+    color: #183b4e;
     cursor: pointer;
     margin-bottom: 5px;
-    transition: opacity 0.3s ease;
+    transition: opacity, color, background-color 0.3s ease;
 }
 .nav-container {
     display: flex;
@@ -50,7 +49,8 @@ h1 {
     gap: 10px;
 }
 .nav:hover {
-    opacity: 0.7;
+    background-color: #183b4e;
+    color: #F3F3E0;
 }
 .nav:active {
     opacity: 0.5;
@@ -108,5 +108,21 @@ main {
 
     .deskripsi {
         margin-top: 50px;
+    }
+
+    .nav-container {
+        gap: 4px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .nav {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    h1 {
+        font-size: 20px;
     }
 }
